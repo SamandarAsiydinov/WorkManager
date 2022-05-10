@@ -1,4 +1,4 @@
-package com.samsdk.workmanagerexample
+package com.samsdk.workmanagerexample.workmanager
 
 import android.content.Context
 import androidx.core.app.NotificationCompat
@@ -7,6 +7,7 @@ import androidx.work.CoroutineWorker
 import androidx.work.ForegroundInfo
 import androidx.work.WorkerParameters
 import androidx.work.workDataOf
+import com.samsdk.workmanagerexample.R
 import com.samsdk.workmanagerexample.util.WorkerKeys
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

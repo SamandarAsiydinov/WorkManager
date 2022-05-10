@@ -1,4 +1,4 @@
-package com.samsdk.workmanagerexample
+package com.samsdk.workmanagerexample.workmanager
 
 import okhttp3.ResponseBody
 import retrofit2.Response
@@ -11,7 +11,7 @@ interface FileApi {
     suspend fun downloadImage(): Response<ResponseBody>
 
     companion object {
-        val instance by lazy {
+        val instance: FileApi by lazy {
             Retrofit.Builder()
                 .baseUrl("https://i.pinimg.com/")
                 .build()
